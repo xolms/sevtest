@@ -1,0 +1,57 @@
+.button {
+	cursor: pointer;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 4px;
+	box-shadow: 0px 5px 30px 0px rgba(50, 50, 50, 0.75);
+	&_big {
+		@include container(498px)
+		height: 68px;
+		line-height: 65px;
+		font-size: 16px;
+		font-family: "Gilroy-Medium", serif;
+	}
+	&_footer {
+		@include container(230px)
+		height: 70px;
+		line-height: 65px;
+		display: inline-block;
+		vertical-align: middle;
+		border: none;
+		background-color: $yellow;
+		transition: all .25s;
+		&:hover {
+			background-color: darken($yellow,7%);
+		}
+		&:focus {
+			background-color: darken($yellow,5%);
+		}
+	}
+
+	&_yellow {
+		background-color: $yellow;
+		overflow: hidden;
+		position: relative;
+		border: none;
+		transition: all .25s;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: darken($yellow, 5%);
+			transform: scaleY(0);
+			transition: all .25s;
+			z-index: -1;
+		}
+		&:hover {
+			background-color: transparent;
+			&::after {
+				transform: scaleY(1);
+			}
+		}
+	}
+}

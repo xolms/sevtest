@@ -1,0 +1,36 @@
+.top-quality {
+	display: flex;
+	padding-bottom: 20px;
+	@include container(1366px)
+	&__item {
+		width: 25%;
+		text-align: center;
+		position: relative;
+	}
+	&__number {
+		font-size: 164px;
+		font-family: "Gilroy-Extrabold", serif;
+		color: #000;
+		line-height: 164px;
+		opacity: .05;
+	}
+	&__img {
+		position: absolute;
+		z-index: 5;
+		top: 45px;
+		margin: auto;
+		left: 0;
+		right: 0;
+	}
+	&__text {
+		max-width: 300px;
+		margin: 0 auto;
+		font-family: "Gilroy-Semibold",serif;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #151515;
+		letter-spacing: 3px;
+		line-height: 36px;
+		padding-top: 40px;
+	}
+}

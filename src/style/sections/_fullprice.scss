@@ -1,0 +1,40 @@
+.full-price {
+	padding-bottom: 100px;
+	text-align: center;
+	padding-top: 20px;
+	&__content {
+		font-family: "Gilroy-Semibold" , serif;
+		font-size: 14px;
+		cursor: pointer;
+		display: inline-block;
+		border-bottom: 2px dashed #000; 
+		padding-bottom: 10px;
+		transition: all .25s;
+	}
+	&__button {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		border: 2px solid #000;
+		position: relative;
+		bottom: 2px;
+		left: 10px;
+		border-radius: 10em;
+		transition: all .25s;
+		&::before {
+			@include buttonplus;
+		}
+		&::after {
+			@include buttonplus;
+			transition: all .25s;	
+		}
+	}
+	&__content:hover {
+		.full-price__button {
+			&::after {
+				transform: translateY(-50%) rotate(90deg);
+			}
+		}
+	}
+}

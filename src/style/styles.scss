@@ -1,0 +1,32 @@
+@import "bourbon";
+
+@import "fonts";
+@import "vars";
+@import "mixins";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	min-width: 320px;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.6;
+	width: 100%;
+	font-weight: normal;
+	font-family: "Gilroy-Regular", serif;
+}
+@import "head/index";
+@import "sections/index";
+@import "title";
+@import "button";
+@import "shipping/index";
+@import "advantages/index";
+@import "quality/index";
+@import "rewievs/index";
+@import "lastmap/index";
+@import "footer";
+@import "modal";

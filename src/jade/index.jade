@@ -1,0 +1,110 @@
+extends template
+block title
+	title Главная
+block content
+	include components/header
+	section.section_bg.section_one
+		h2.title
+			span.title_left 01
+			span.title_center /
+			span.title_rigth.title_dark ВИДЫ И ЦЕНЫ
+		.price__wrapper
+			+priceitem
+			+priceitem
+			+priceitem
+			+priceitem
+		.full-price
+			.full-price__content ПОКАЗАТЬ БОЛЬШЕ
+				span.full-price__button
+	section.section_white.section_shipping
+		h2.title
+			span.title_left 02
+			span.title_center /
+			span.title_rigth.title_dark ДОСТАВКА
+		include components/map
+	section.section_image.section_advantages
+		.section_darken
+			h2.title
+				span.title_left 03
+				span.title_center /
+				span.title_rigth.title_white Преимущества
+			.advantages__container
+				.advantages__item
+					.advantages__number 01
+					.advantages__wrap
+						img(src="img/icon_garantie.png", alt="123" class="advantages__img")
+						.advantages__text Гарантия 2 года по договору
+				.advantages__item
+					.advantages__number 02
+					.advantages__wrap
+						img(src="img/icon_works.png", alt="123" class="advantages__img")
+						.advantages__text ОБСЛУЖИВАНИЕ ПОСЛЕ ГАРАНТИИ
+				.advantages__item
+					.advantages__number 03
+					.advantages__wrap
+						img(src="img/icon_quality.png", alt="123" class="advantages__img")
+						.advantages__text КАЧЕСТВО ОГРАД ВЫСШЕГО УРОВНЯ
+				.advantages__item
+					.advantages__number 04
+					.advantages__wrap
+						img(src="img/icon_time.png", alt="123" class="advantages__img")
+						.advantages__text СРОК СЛУЖБЫ 60 лет
+				.advantages__item
+					.advantages__number 05
+					.advantages__wrap
+						img(src="img/icon_set.png", alt="123" class="advantages__img advantages__img_set")
+						.advantages__text БЫСТРЫЕ СРОКИ УСТАНОВКИ
+				.advantages__item
+					.advantages__number 06
+					.advantages__wrap
+						img(src="img/icon_fence.png", alt="123" class="advantages__img" )
+						.advantages__text СЕКЦИИ ЗАБОРА В НАЛИЧИИ
+
+
+	section.section_white.section_quality
+		h2.title
+			span.title_left 04
+			span.title_center /
+			span.title_rigth.title_dark КАК МЫ СОЗДАЕМ КАЧЕСТВО ВЫСШЕГО УРОВНЯ?
+		include components/quality
+	section.section_bg.section_reviews
+		h2.title
+			span.title_left 05
+			span.title_center /
+			span.title_rigth.title_dark ВИДЕО ОТЗЫВЫ И ФОТО РАБОТ С АДРЕСАМИ
+		include components/rewiews
+	section.section_image.section_map
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1690.0766348550871!2d33.46873204825157!3d44.56922748772706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409523303184f847%3A0x22e1e294d1027257!2zMzUg0KTQuNC-0LvQtdC90YLQvtCy0YHQutC-0LUg0YguLCDQodC10LLQsNGB0YLQvtC_0L7Qu9GM!5e0!3m2!1sru!2s!4v1490120473200" class="google-map" style="border:0" allowfullscreen></iframe>
+		.footer-callback
+			.footer-callback__top
+				img(src="img/icon5-.png", alt="123" class="footer-callback__img")
+				h4.footer-callback__title ЖЕЛАЕТЕ РАССЧИТАТЬ СТОИМОСТЬ?
+			.footer-callback__text 
+				p Звоните +7 978 335 55 55 или оставьте заявку, после чего наш менеджер свяжется с вами!
+				p Внимание, при большом объеме всегда действуют скидки
+			.footer-callback__action Акция до 31 марта, СКИДКА НА ДОСТАВКУ 25%
+			form
+				.footer-callback__form
+					.footer-callback__formitem
+						input(type="text" placeholder="Имя" name="name" class="footer-callback__input")
+					.footer-callback__formitem
+						input(type="email" name="email" placeholder="Email" class="footer-callback__input")
+					.footer-callback__formitem
+						button(type="submit" class="button button_footer") Отправить
+	footer.footer
+		.footer__wrap
+			.footer__left 2017 © Монтаж строй сервис. Копирайт. Все права защищены.
+			.footer__right Разработка и создание сайта:
+				a(href="#").footer__site
+					img(src="img/logo_company.png", alt="logo" class="footer__img") 
+	.modal
+		.modal__wrap
+			.modal__top
+				img(src="img/iconphone.png", alt="phone")
+			.modal__content
+				h3.modal__title Заказать звонок
+				.modal__form
+					form
+						input(type="text" placeholder="Имя" name="name" class="modal__input")
+						input(type="email" name="email" placeholder="Email" class="modal__input")
+						button(type="submit" class="button button_footer") Отправить

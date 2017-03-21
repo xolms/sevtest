@@ -1,0 +1,36 @@
+.section {
+
+	&_image {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&_darken {
+		position: relative;
+		z-index: 2;
+		background-color: rgba(0,0,0,.6);
+	}
+	&_bg {
+		background-repeat: repeat;
+		background-image: url(../img/bg1.jpg);
+	}
+	&_one {
+		padding-top: 35px;
+	}
+	&_shipping {
+		padding-bottom: 120px;
+	}
+	&_advantages {
+		background-image: url(../img/bg.jpg);
+	}
+	&_quality {
+		padding-bottom: 60px;
+	}
+	&_map {
+		position: relative;
+		margin-bottom: -7px;
+	}
+}
+@import "price";
+@import "fullprice";

@@ -1,0 +1,57 @@
+.phone {
+	float: right;
+	padding-top: 15px;
+
+	&__icon {
+		vertical-align: middle;
+	}
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 15px;
+		font-size: 30px;
+		letter-spacing: 2px;
+		font-family: "Gilroy-Semibold", serif;
+		line-height: 38px;
+		color: $white;
+		&_yellow {
+			color: $yellow;
+			font-size: 40px;
+			padding-left: 15px;
+			vertical-align: top;
+			line-height: 33px;
+		}
+		&_dark {
+			color: #151515;
+		}
+	}
+	&__buttonwrap {
+		text-align: center;
+		padding-top: 15px;
+	}
+	&__button {
+		display: inline-block;
+		cursor: pointer;
+		text-transform: uppercase;
+		color: $white;
+		font-family: "Gilroy-Semibold", serif;
+		font-size: 14px;
+		transition: all .25s;
+		border-bottom: 1px dashed $white;
+		&:hover {
+			color: $yellow;
+			border-color: $yellow;
+		}
+	}
+	&__freecons {
+		display: inline-block;
+		max-width: 150px;
+		float: right;
+		color: #151515;
+		font-size: 14px;
+		font-family: "Gilroy-Semibold", serif;
+		text-transform: uppercase;
+		line-height: 20px;
+		letter-spacing: 3px;
+	}
+}

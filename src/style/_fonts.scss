@@ -1,0 +1,5 @@
+@include font-face("Gilroy-Regular", "../fonts/Gilroy-Regular/Gilroy-Regular", normal, $file-formats: ttf eot woff2 woff svg);
+@include font-face("Gilroy-Medium", "../fonts/Gilroy-Medium/Gilroy-Medium", normal, $file-formats: ttf eot woff2 woff svg);
+@include font-face("Gilroy-Extrabold", "../fonts/Gilroy-Extrabold/Gilroy-Extrabold", normal, $file-formats: ttf eot woff2 woff svg);
+@include font-face("Gilroy-Semibold", "../fonts/Gilroy-Semibold/Gilroy-Semibold", normal, $file-formats: ttf eot woff2 woff svg);
+@include font-face("Mediator-Regular", "../fonts/Mediator-Regular/Mediator-Regular", normal, $file-formats: ttf eot woff2 woff svg);

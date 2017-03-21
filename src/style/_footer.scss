@@ -1,0 +1,30 @@
+.footer {
+	background-color: #d5d5d5;
+	&__wrap {
+		@include container(1170px);
+		@include clearfix;
+		line-height: 0px;
+		padding: 15px 0;
+	}
+	&__left {
+		float: left;
+		line-height: 30px;
+		color: #959595;
+		font-size: 12px;
+		font-family: "Gilroy-Regular", serif;
+		letter-spacing: 2px;
+	}
+	&__right {
+		float: right;
+		color: #959595;
+		font-size: 12px;
+		font-family: "Gilroy-Regular", serif;
+		letter-spacing: 2px;
+	}
+	&__img {
+		vertical-align: middle;
+	}
+	&__site {
+		margin-left: 10px;
+	}
+}

@@ -1,0 +1,32 @@
+.head {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../img/bg.jpg);
+
+	&__content {
+		min-height: 100vh;
+		z-index: 3;
+		padding-top: 37px;
+	}
+
+	&__topline {
+		@include clearfix;
+		@include container(1366px)
+	}
+	&__center {
+		padding-top: 17vh;
+		@include container(827px)
+	}
+	&__bottom {
+		padding-top: 25px;
+		padding-bottom: 0px;
+		
+	}
+	&__form {
+		height: 40px;
+		position: relative;
+		@include container(1170px)
+	}
+
+}

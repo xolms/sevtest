@@ -1,0 +1,78 @@
+.shipping {
+	@include container(1366px)
+	background-image: url(../img/map.png);
+	background-size: auto;
+	@include clearfix;
+	&__wrapper {
+		width: 49%;
+		display: inline-block;
+		&_left {
+			float: left;
+		}
+		&_right {
+			float: right;
+		}
+	}
+	&__item {
+		max-width: 228px;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 200px;
+		&_big {
+			max-width: 300px;
+		}
+		&_left {
+			float: left;
+		}
+		&_right {
+			float: right;
+		}
+		&_last {
+			padding-bottom: 0;
+		}
+	}
+	&__img {
+		vertical-align: middle;
+	}
+	&__titletext {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 30px;
+		padding-left: 15px;
+		font-family: "Gilroy-Semibold", serif;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
+	&__props {
+		padding: 10px 0;
+		color: #959595;
+		font-size: 12px;
+		font-family: "Gilroy-Regular", serif;
+		letter-spacing: 3px;
+	}
+	&__content {
+		display: table;
+		width: 100%;
+	}
+	&__wrap {
+		display: table-row;
+		padding-bottom: 5px;
+	}
+	&__left {
+		display: table-cell;
+		color: #959595;
+		font-size: 14px;
+		font-family: "Mediator-Regular",serif;
+	}
+	&__right {
+		display: table-cell;
+		font-size: 14px;
+		color: #3e3e3e;
+		font-family: "Mediator-Regular",serif;
+		font-weight: bold;
+	}
+	&__buttonwrap {
+		padding-top: 100px;
+		text-align: center;
+	}
+}

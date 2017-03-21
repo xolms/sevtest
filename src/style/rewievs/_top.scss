@@ -1,0 +1,57 @@
+.reviews-top {
+	@include container(570px)
+	display: flex;
+	flex-wrap: nowrap;
+	padding-bottom: 80px;
+	justify-content: space-between;
+	&__people {
+		position: relative;
+		text-align: center;
+		transition: all .25s;
+		&:first-child {
+			left: 0;
+		}
+		&.active {
+			z-index: 3;
+			.reviews-top__avatar {
+				transform: scale(1.2);
+				opacity: 1;
+			}
+			.reviews-top__text {
+				display: block;
+				opacity: 1;
+			}
+		}
+	}
+	&__avatar {
+		width: 120px;
+		height: auto;
+		opacity: .7;
+		border-radius: 10em;
+		cursor: pointer;
+		transition: all .25s;
+	}
+	&__text {
+		display: none;
+		position: absolute;
+		bottom: -60px;
+		width: 230px;
+		left: -50%;
+		transform: translateX(10px);
+		opacity: 0;
+		transition: all .25s;
+	}
+	&__name {
+		color: #000;
+		font-size: 16px;
+		font-family: "Gilroy-Semibold", serif;
+		text-transform: uppercase;
+	}
+	&__company {
+		font-size: 10px;
+		color: #8b8b8b;
+		font-family: "Gilroy-Semibold", serif;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+}

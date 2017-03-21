@@ -1,0 +1,41 @@
+.reviews-center {
+	@include container(1160px)
+	padding-top: 10px;
+	padding-bottom: 70px;
+	&__viewport {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+	&__wrapper {
+		position: relative;
+		left: 0;
+		top: 0;
+		margin: 0;
+		padding: 0;
+		transition: all .5s;
+		transition-timing-function: ease-in-out;
+	}
+	&__item {
+		display: inline;
+		float: left;
+		@include clearfix;
+	}
+	&__video {
+		width: 45%;
+		float: left;
+	}
+	&__film {
+		width: 100%;
+		height: 380px;
+	}
+	&__photo {
+		width: 45%;
+		float: right;
+		text-align: right;
+	}
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+}

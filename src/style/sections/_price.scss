@@ -1,0 +1,125 @@
+.price {
+	&__wrapper {
+		@include container(1374px)
+		@include clearfix
+	}
+	&__item {
+		width: 50%;
+		float: left;
+		padding-left: 25px;
+		padding-bottom: 90px;
+	}
+	&__wrap {
+		border: 3px solid #e5e5e5;
+		width: 70%;
+		padding: 30px;
+		padding-bottom: 70px;
+		position: relative;
+	}
+	&__title {
+		font-size: 24px;
+		color: #000;
+		position: relative;
+		display: inline-block;
+		font-family: "Gilroy-Extrabold" , serif;
+		text-transform: uppercase;
+		line-height: 36px;
+		letter-spacing: 4px;
+		padding-bottom: 30px;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 15px;
+			width: 100%;
+			max-width: 200px;
+			height: 3px;
+			display: block;
+			right: -50%;
+			background-color: $yellow;
+			z-index: 5;
+		}
+	}
+	&__description {
+		font-size: 18px;
+		font-family: "Gilroy-Regular", serif;
+		color: #000;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		padding-bottom: 15px;
+	}
+	&__descitem {
+		font-size: 14px;
+		font-family: "Mediator-Regular", serif;
+		color: #959595;
+	}
+	&__infowrap {
+		width: 60%;
+		@include clearfix
+		text-align: center;
+		padding-top: 20px;
+	}
+	&__infoitem {
+		display: inline-block;
+		float: left;
+		width: 33%;
+		min-height: 60px;
+		vertical-align: bottom;
+		position: relative;
+	}
+	&__infoimg {
+		vertical-align: middle;
+	}
+	&__infotext {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		font-size: 12px;
+		font-family: "Mediator-Regular",serif;
+		color: #959595;
+	}
+	&__img {
+		position: absolute;
+		right: -30%;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 300px;
+		width: 100%;
+		height: auto;
+		transition: all .25s;
+	}
+	&__button {
+		position: absolute;
+		bottom: -35px;
+		left: 0;
+		right: 0;
+		max-width: 200px;
+		margin: 0 auto; 
+		text-align: center;
+		cursor: pointer;
+		border: 2px solid #000;
+		border-radius: 50px;
+		height: 65px;
+		line-height: 60px;
+		font-size: 16px;
+		font-family: "Gilroy-Medium", serif;
+		background: url(../img/bg1.jpg);
+		transition: all .25s;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+}
+.price__wrap {
+	&:hover {
+		.price__img {
+			box-shadow: 0px 30px 30px 0px rgba(50, 50, 50, 0.75);
+		}
+		.price__button {
+			box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+			background-image: none;
+			background-color: $yellow;
+			border-color: $yellow;
+		}
+	}
+}
