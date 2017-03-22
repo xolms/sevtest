@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="libs/components.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
     <link rel="stylesheet" href="style/styles.css"/>
+    <link rel="shortcut icon" href="img/fav_icon.ico" type="image/x-icon"/>
     <title>Главная</title>
   </head>
   <body class="page">
@@ -18,7 +19,7 @@
             <div class="phone phone_head"> <img src="img/icon_phone.png" alt="phone" class="phone__icon"/>
               <div class="phone__text">+7 978<span class="phone__text_yellow">335 55 55</span></div>
               <div class="phone__buttonwrap"> 
-                <div class="phone__button">Заказать звонок</div>
+                <div class="phone__button modal-open">Заказать звонок</div>
               </div>
             </div>
           </div>
@@ -27,7 +28,7 @@
               <div class="head-container__top">ПРОИЗВОДИМ, ПРОДАЕМ, ДОСТАВЛЯЕМ и УСТАНАВЛИВАЕМ</div>
               <h1 class="head-container__title">Еврозаборы по<br/>всему крыму</h1>
               <div class="head-container__bottomline"></div>
-              <div class="head-container__button">Заказать</div>
+              <div class="head-container__button modal-open">Заказать</div>
             </div>
           </div>
           <div class="head__bottom">
@@ -46,7 +47,7 @@
             </div>
             <div class="form-head__right">
               <input type="tel" placeholder="+7" class="form-head__input"/>
-              <div class="form-head__submit">Заказать звонок</div>
+              <div class="form-head__submit modal-open">Заказать звонок</div>
             </div>
           </div>
         </div>
@@ -73,7 +74,7 @@
                 <div class="price__infotext">Доставка</div>
               </div>
             </div>
-            <div class="price__button">Заказать</div>
+            <div class="price__button modal-open">Заказать</div>
           </div>
         </div>
         <div class="price__item">
@@ -94,7 +95,7 @@
                 <div class="price__infotext">Доставка</div>
               </div>
             </div>
-            <div class="price__button">Заказать</div>
+            <div class="price__button modal-open">Заказать</div>
           </div>
         </div>
         <div class="price__item">
@@ -115,7 +116,7 @@
                 <div class="price__infotext">Доставка</div>
               </div>
             </div>
-            <div class="price__button">Заказать</div>
+            <div class="price__button modal-open">Заказать</div>
           </div>
         </div>
         <div class="price__item">
@@ -136,7 +137,7 @@
                 <div class="price__infotext">Доставка</div>
               </div>
             </div>
-            <div class="price__button">Заказать</div>
+            <div class="price__button modal-open">Заказать</div>
           </div>
         </div>
       </div>
@@ -239,7 +240,7 @@
         </div>
       </div>
       <div class="shipping__buttonwrap">
-        <div class="shipping__button button button_yellow button__shadow button_big">РАССЧИТАТЬ РАССТОЯНИЕ				</div>
+        <div class="shipping__button button button_yellow button__shadow button_big modal-open">РАССЧИТАТЬ РАССТОЯНИЕ				</div>
       </div>
     </section>
     <section class="section_image section_advantages">
@@ -306,8 +307,8 @@
         </div>
       </div>
       <div class="quality-nav">
-        <div data-qualitytab="video" class="quality-nav__item quality-nav__item_first">ВИДЕО ПРОИЗВОДСТВА	</div>
-        <div data-qualitytab="photo" class="quality-nav__item quality-nav__item_second active">ФОТО ПРОИЗВОДСТВА</div>
+        <div data-qualitytab="video" class="quality-nav__item quality-nav__item_first">ВИДЕО <span>ПРОИЗВОДСТВА</span></div>
+        <div data-qualitytab="photo" class="quality-nav__item quality-nav__item_second active">ФОТО <span>ПРОИЗВОДСТВА</span></div>
       </div>
       <div class="quality-tabs">
         <div class="quality-tabs__tab quality-tabs__tab_video"><iframe class="quality-tabs__item_video"  src="https://www.youtube.com/embed/bW43Q0ur6ZM"  allowfullscreen></iframe></div>
@@ -389,9 +390,10 @@
         </div>
       </div>
     </section>
-    <section class="section_image section_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1690.0766348550871!2d33.46873204825157!3d44.56922748772706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409523303184f847%3A0x22e1e294d1027257!2zMzUg0KTQuNC-0LvQtdC90YLQvtCy0YHQutC-0LUg0YguLCDQodC10LLQsNGB0YLQvtC_0L7Qu9GM!5e0!3m2!1sru!2s!4v1490120473200" class="google-map" style="border:0" allowfullscreen></iframe>
+    <section class="section_image section_map">
+      <div id="map" class="google-map"></div>
       <div class="footer-callback">
-        <div class="footer-callback__top"><img src="img/icon5-.png" alt="123" class="footer-callback__img"/>
+        <div class="footer-callback__top"><img src="img/icon-calc.png" alt="123" class="footer-callback__img"/>
           <h4 class="footer-callback__title">ЖЕЛАЕТЕ РАССЧИТАТЬ СТОИМОСТЬ?</h4>
         </div>
         <div class="footer-callback__text"> 
@@ -405,7 +407,7 @@
               <input type="text" placeholder="Имя" name="name" class="footer-callback__input"/>
             </div>
             <div class="footer-callback__formitem">
-              <input type="email" name="email" placeholder="Email" class="footer-callback__input"/>
+              <input type="tel" name="phone" placeholder="Телефон" class="footer-callback__input"/>
             </div>
             <div class="footer-callback__formitem">
               <button type="submit" class="button button_footer">Отправить</button>
@@ -428,7 +430,7 @@
           <div class="modal__form">
             <form>
               <input type="text" placeholder="Имя" name="name" class="modal__input"/>
-              <input type="email" name="email" placeholder="Email" class="modal__input"/>
+              <input type="tel" name="phone" placeholder="Телефон" class="modal__input modal__phone"/>
               <button type="submit" class="button button_footer">Отправить</button>
             </form>
           </div>
@@ -436,6 +438,7 @@
       </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

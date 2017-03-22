@@ -1,7 +1,11 @@
 function modal(){
-	$('.phone__button').click(function(event) {
+	$('.modal-open').click(function(event) {
+        event.preventDefault();
 		$('.modal').show();
-
+        if($('.form-head__input').val().length > 0) {
+            console.log($('.form-head__input').val());
+            $('.modal__phone').val($('.form-head__input').val());
+        }
 	});
 	$(document).mouseup(function (e){
 		var elem = $('.modal');
@@ -11,6 +15,13 @@ function modal(){
 			$('.modal').hide();
 	}
 });
+}
+function scrollbottom() {
+    $('.scroll-bottom__wrap').click( function(event){ // ловим клик по ссылке с классом go_to
+        event.preventDefault();
+	    $('html, body').animate({ scrollTop: $('.section_one .title').offset().top }, 500); // анимируем скроолинг к элементу scroll_el
+	    return false; // выключаем стандартное действие
+    });
 }
 
 function slider() {
@@ -95,16 +106,26 @@ jQuery(document).ready(function($) {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 		}
 	});
-	resize();
+    scrollbottom();
+    map();
 	$(document).resize(function(event) {
 		resize();
 	});
 });
-function resize() {
-	if($(document).width() <= 400) {
-		$('.quality-nav__item_first').text('ВИДЕО');
-		$('.quality-nav__item_second').text('ФОТО');
-	}
+
+function map() {
+    ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [44.567690, 33.469778],
+            zoom: 15
+        });
+        myPlacemark = new ymaps.Placemark([44.571859, 33.469736], { hintContent: 'ЕВРОЗАБОРЫ ПО ВСЕМУ КРЫМУ!'});
+        myMap.geoObjects.add(myPlacemark);
+    }
 }
 
 

@@ -74,10 +74,10 @@ block content
 			span.title_rigth.title_dark ВИДЕО ОТЗЫВЫ И ФОТО РАБОТ С АДРЕСАМИ
 		include components/rewiews
 	section.section_image.section_map
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1690.0766348550871!2d33.46873204825157!3d44.56922748772706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409523303184f847%3A0x22e1e294d1027257!2zMzUg0KTQuNC-0LvQtdC90YLQvtCy0YHQutC-0LUg0YguLCDQodC10LLQsNGB0YLQvtC_0L7Qu9GM!5e0!3m2!1sru!2s!4v1490120473200" class="google-map" style="border:0" allowfullscreen></iframe>
+		.google-map#map
 		.footer-callback
 			.footer-callback__top
-				img(src="img/icon5-.png", alt="123" class="footer-callback__img")
+				img(src="img/icon-calc.png", alt="123" class="footer-callback__img")
 				h4.footer-callback__title ЖЕЛАЕТЕ РАССЧИТАТЬ СТОИМОСТЬ?
 			.footer-callback__text 
 				p Звоните +7 978 335 55 55 или оставьте заявку, после чего наш менеджер свяжется с вами!
@@ -88,7 +88,7 @@ block content
 					.footer-callback__formitem
 						input(type="text" placeholder="Имя" name="name" class="footer-callback__input")
 					.footer-callback__formitem
-						input(type="email" name="email" placeholder="Email" class="footer-callback__input")
+						input(type="tel" name="phone" placeholder="Телефон" class="footer-callback__input")
 					.footer-callback__formitem
 						button(type="submit" class="button button_footer") Отправить
 	footer.footer
@@ -106,5 +106,5 @@ block content
 				.modal__form
 					form
 						input(type="text" placeholder="Имя" name="name" class="modal__input")
-						input(type="email" name="email" placeholder="Email" class="modal__input")
+						input(type="tel" name="phone" placeholder="Телефон" class="modal__input modal__phone")
 						button(type="submit" class="button button_footer") Отправить
