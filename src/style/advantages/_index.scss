@@ -73,3 +73,35 @@
 		opacity: .2;
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.advantages {
+		&__wrap {
+			min-height: 360px;
+			&::before {
+				width: 50%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1000px) {
+	.advantages {
+		&__container {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		&__wrap {
+			min-height: 320px;
+		}
+		&__item {
+			width: 50%;
+		}
+	}
+}
+@media screen and (max-width: 800px) {
+	.advantages {
+		&__wrap {
+			min-height: 360px;
+		}
+	}
+}

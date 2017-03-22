@@ -30,3 +30,10 @@
 	}
 
 }
+@media screen and (max-width: 1400px) {
+	.head {
+		&__topline {
+			padding: 0 20px;
+		}
+	}
+}

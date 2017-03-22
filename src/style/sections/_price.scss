@@ -123,3 +123,43 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1200px) {
+	.price {
+		&__wrapper {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		&__item {
+			text-align: center;
+			padding-left: 0;
+		}
+		&__wrap {
+			margin: 0 auto;
+		}
+		&__title {
+			margin: 0 auto;
+			&::after {
+				position: relative;
+				right: 0;
+				bottom: 0;
+				margin: 0 auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
+		&__description {
+			padding-top: 30px;
+		}
+		&__img {
+			position: relative;
+			top: 0;
+			right: 0;
+			transform : translateY(0);
+		}
+		&__infowrap {
+			width: 100%;
+		}
+	}
+}

@@ -34,3 +34,18 @@
 }
 @import "price";
 @import "fullprice";
+
+@media screen and (max-width: 1100px) {
+	.section {
+		&_one {
+			padding-top: 50px;
+		}
+	}
+}
+@media screen and (max-width: 900px) {
+	.section {
+		&_shipping {
+			padding-bottom: 60px;
+		}
+	}
+}

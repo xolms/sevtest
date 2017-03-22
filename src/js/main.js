@@ -95,7 +95,17 @@ jQuery(document).ready(function($) {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 		}
 	});
+	resize();
+	$(document).resize(function(event) {
+		resize();
+	});
 });
+function resize() {
+	if($(document).width() <= 400) {
+		$('.quality-nav__item_first').text('ВИДЕО');
+		$('.quality-nav__item_second').text('ФОТО');
+	}
+}
 
 
 

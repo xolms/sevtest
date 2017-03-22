@@ -39,3 +39,11 @@
 		height: auto;
 	}
 }
+@media screen and (max-width: 1200px) {
+	.reviews-center {
+		&__item {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+}

@@ -29,3 +29,27 @@
 		cursor: zoom-in;
 	}
 }
+@media screen and (max-width: 1200px) {
+	.quality-tabs {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.quality-tabs{
+		&__item {
+			&_video {
+				height: 40vh;
+			}
+		}
+	}
+}
+@media screen and (max-width: 900px) {
+	.quality-tabs{
+		&__item {
+			&_photo {
+				width: 48%;
+			}
+		}
+	}
+}
