@@ -19,6 +19,7 @@
 		float: right;
 		background-color: $white;
 		@include callhead;
+        min-height: 80px;
 	}
 	&__input {
 		border: none;

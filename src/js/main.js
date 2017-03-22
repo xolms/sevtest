@@ -71,7 +71,7 @@ jQuery(document).ready(function($) {
 	modal();
 
 	slider();
-
+    $('.modal__phone').mask("+7(999) 999-9999");
 	$(".form-head__input").mask("+7(999) 999-9999");
 
 	$('.reviews-top__people').each(function(index, el) {
@@ -120,10 +120,10 @@ function map() {
 
     function init(){     
         myMap = new ymaps.Map("map", {
-            center: [44.567690, 33.469778],
+            center: [44.570168, 33.469908],
             zoom: 15
         });
-        myPlacemark = new ymaps.Placemark([44.571859, 33.469736], { hintContent: 'ЕВРОЗАБОРЫ ПО ВСЕМУ КРЫМУ!'});
+        myPlacemark = new ymaps.Placemark([44.571859, 33.469736], { hintContent: 'ЕВРОЗАБОРЫ ПО ВСЕМУ КРЫМУ! ФИОЛЕНТОВСКОЕ ШОССЕ, 35Б, КОРПУС 5'});
         myMap.geoObjects.add(myPlacemark);
     }
 }
