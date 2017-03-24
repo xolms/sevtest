@@ -10,6 +10,7 @@
 		vertical-align: middle;
 		padding-left: 15px;
 		font-size: 30px;
+		text-decoration: none;
 		letter-spacing: 2px;
 		font-family: "Gilroy-Semibold", serif;
 		line-height: 38px;
@@ -28,6 +29,9 @@
 	&__buttonwrap {
 		text-align: center;
 		padding-top: 15px;
+	}
+	&__head {
+		text-decoration: none;
 	}
 	&__button {
 		display: inline-block;

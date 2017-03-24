@@ -1,20 +1,22 @@
 .google-map {
-	width: 100%;
+	width: 50%;
 	border: none;
 	height: 790px;
+	float: left;
+}
+.footer-map {
+	width: 100%;
+	@include clearfix;
 }
 .footer-callback {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	width: 50%;
+	float: right;
 	background-color: #fff;
-	padding-top: 30px;
+	padding-top: 60px;
 	padding-bottom: 40px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
 	text-align: center;
-	@include container(920px);
 	&__img {
 		width: 40px;
 		height: auto;
@@ -85,4 +87,37 @@
 		}
 
 	}
+}
+@media screen and (max-width: 1100px) {
+	.footer-callback {
+		padding-top: 150px;
+		&__form {
+			flex-wrap: wrap;
+		}
+		&__formitem {
+			width: 100%;
+			margin-top: 30px
+		}
+	}
+}
+@media screen and (max-width: 1000px) {
+	.google-map {
+		display: none;
+	}
+	.footer-callback {
+		width: 100%
+	}
+}
+@media screen and (max-width: 700px) {
+	.footer-callback {
+		padding-top: 170px
+	}
+}
+@media screen and (max-width: 500px) {
+	.footer-callback__img {
+		display: none
+	}
+	.footer-callback {
+		padding-top: 200px
+	} 
 }

@@ -85,6 +85,10 @@
 		height: auto;
 		&__left {
 			float: none;
+			border-top-right-radius: 50px;
+			border-top-left-radius: 50px;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
 			width: 100%;
 			text-align: center;
 		}
@@ -92,6 +96,10 @@
 			float: none;
 			width: 100%;
 			text-align: center;
+			border-top-right-radius: 0px;
+			border-top-left-radius: 0px;
+			border-bottom-right-radius: 50px;
+			border-bottom-left-radius: 50px;
 		}
 		&__submit {
 			float: none;

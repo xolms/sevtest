@@ -74,23 +74,24 @@ block content
 			span.title_rigth.title_dark ВИДЕО ОТЗЫВЫ И ФОТО РАБОТ С АДРЕСАМИ
 		include components/rewiews
 	section.section_image.section_map
-		.google-map#map
-		.footer-callback
-			.footer-callback__top
-				img(src="img/icon-calc.png", alt="123" class="footer-callback__img")
-				h4.footer-callback__title ЖЕЛАЕТЕ РАССЧИТАТЬ СТОИМОСТЬ?
-			.footer-callback__text 
-				p Звоните +7 978 335 55 55 или оставьте заявку, после чего наш менеджер свяжется с вами!
-				p Внимание, при большом объеме всегда действуют скидки
-			.footer-callback__action Акция до 31 марта, СКИДКА НА ДОСТАВКУ 25%
-			form
-				.footer-callback__form
-					.footer-callback__formitem
-						input(type="text" placeholder="Имя" name="name" class="footer-callback__input")
-					.footer-callback__formitem
-						input(type="tel" name="phone" placeholder="Телефон" class="footer-callback__input")
-					.footer-callback__formitem
-						button(type="submit" class="button button_footer") Отправить
+		.footer-map
+			.google-map#map
+			.footer-callback
+				.footer-callback__top
+					img(src="img/icon-calc.png", alt="123" class="footer-callback__img")
+					h4.footer-callback__title ЖЕЛАЕТЕ РАССЧИТАТЬ СТОИМОСТЬ?
+				.footer-callback__text 
+					p Звоните +7 978 335 55 55 или оставьте заявку, после чего наш менеджер свяжется с вами!
+					p Внимание, при большом объеме всегда действуют скидки
+				.footer-callback__action Акция до 31 марта, СКИДКА НА ДОСТАВКУ 25%
+				form
+					.footer-callback__form
+						.footer-callback__formitem
+							input(type="text" placeholder="Имя" name="name" class="footer-callback__input")
+						.footer-callback__formitem
+							input(type="tel" name="phone" placeholder="Телефон" class="footer-callback__input")
+						.footer-callback__formitem
+							button(type="submit" class="button button_footer") Отправить
 	footer.footer
 		.footer__wrap
 			.footer__left 2017 © Монтаж строй сервис. Копирайт. Все права защищены.
