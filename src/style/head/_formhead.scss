@@ -13,6 +13,8 @@
 		width: 50%;
 		background-color: $yellow;
 		@include callhead;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
 	}
 	&__right {
 		width: 50%;
@@ -20,6 +22,8 @@
 		background-color: $white;
 		@include callhead;
         min-height: 80px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
 	}
 	&__input {
 		border: none;

@@ -19,7 +19,7 @@ function modal(){
 function scrollbottom() {
     $('.scroll-bottom__wrap').click( function(event){ // ловим клик по ссылке с классом go_to
         event.preventDefault();
-	    $('html, body').animate({ scrollTop: $('.section_one .title').offset().top }, 500); // анимируем скроолинг к элементу scroll_el
+	    $('html, body').animate({ scrollTop: $('.head__form').offset().top }, 500); // анимируем скроолинг к элементу scroll_el
 	    return false; // выключаем стандартное действие
     });
 }
@@ -34,6 +34,11 @@ function slider() {
 	var sliderwrap = $('.reviews-center__wrapper'); //Сам слайдер
 	var slideitem = $('.reviews-center__item'); //Сам слайд
 	var interval = setInterval(Slide, slidetime);
+    $(sliderwrap).hover(function() {
+        clearInterval(interval);
+    }, function() {
+        interval = setInterval(Slide, slidetime);
+    });
 	sliderwrap.css('width', sliderwidth + "%");
 	slideitem.css({
 		'width': slidewidth + "%"

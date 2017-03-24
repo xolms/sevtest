@@ -10,14 +10,14 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
-		concat         = require('gulp-concat'),
-		jade = require('gulp-jade'),
-		cache = require('gulp-cache'),
-		bourbon = require('node-bourbon'),
-		ftp = require('vinyl-ftp'),
-		notify = require("gulp-notify"),
+    concat         = require('gulp-concat'),
+    jade = require('gulp-jade'),
+    cache = require('gulp-cache'),
+    bourbon = require('node-bourbon'),
+    ftp = require('vinyl-ftp'),
+    notify = require("gulp-notify"),
     browserSync = require("browser-sync"),
-		mainBowerFiles = require('main-bower-files'),
+    mainBowerFiles = require('main-bower-files'),    
     reload = browserSync.reload;
 
 
@@ -97,7 +97,7 @@ gulp.task('js:build', function () {
 
 gulp.task('style:build', function () {
     gulp.src(path.src.style)
-				.pipe(sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(sass({
 						includePaths: [require('node-bourbon').includePaths, require('bourbon-neat').includePaths],
             outputStyle: 'compressed',
